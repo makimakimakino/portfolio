@@ -2,30 +2,120 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>槙野圭一</title>
     <link rel="stylesheet" href="css/style.css">
-    <title>商品管理アプリ</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossoigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav> 
-            <a href="index.php">商品管理アプリ</a>
+        <nav>
+            <ul>
+                <li><a href="#aboutMe">About me</a></li>
+                <li><a href="#experience">職歴・経験</a></li>
+                <li><a href="#skill">スキル</a></li>
+                <li><a href="#works">制作物</a></li>
+            </ul>
         </nav>
     </header>
-    
     <main>
-        <article class="home">
-            <h1>商品管理アプリ</h1>
-            <p>『PHPとデータベースを連携しよう』成果物</p>
-            <a href="read.php" class="btn">商品一覧</a>
-        </article>
+        <section id="aboutMe">
+            <h2>About me</h2>
+            <div class="content">
+                <table class="table-profile">
+                    <tr>
+                        <th class="profile-title" colspan="2">プロフィール</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-summary">『名前』</td>
+                        <td class="profile-content">槙野圭一</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-summary">『出身』</td>
+                        <td class="profile-content">兵庫県</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-summary">『生年月日』</td>
+                        <td class="profile-content">1990年3月18日</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-summary">『最終学歴』</td>
+                        <td class="profile-content">関西学院大学　理工学部情報科学科卒<br>関西学院大学院　修士課程修了</td>
+                    </tr>
+                </table>
+                <p>大学院卒業後、パチスロメーカーでパチスロ開発の企画職を8年間行ってきました<br></p>
+                <img src="img/kikaku.png" alt="パチスロ企画職イメージ">
+                <p>企画職として、億単位で動く大きなプロジェクトを進めていく経験をしており、<br>
+                    <span class="strong">コミュニケーション能力</span><br>
+                    <span class="strong">企画立案能力</span><br>
+                    <span class="strong">自身で考えて動く力</span><br>
+                    ・・・<br>
+                    を持っていることが強みです</p>
+                <p>また、大学・大学院ではIT、プログラムに関する基礎知識を学習しており、<br>仕事の場では身近な時間短縮ツールの<span class="strong">プログラム作成</span>等も担当してきました</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>職歴・経験</h2>
+            <div class="content">
+                <p>2012年3月<br>
+                関西学院大学理工学部情報科学科　卒業</p>
+                <p>2014年3月<br>
+                    関西学院大学大学院 理工学研究科 人間システム工学専攻　修士課程修了</p>
+                <p>2014年4月<br>
+                    タイヨーエレック株式会社入社</p>
+                <p>2017年4月<br>
+                    親会社のサミー株式会社へ移籍</p>
+                <p>2021年12月<br>
+                    サミー株式会社を退職<br><br>
+                    プログラミングスクール「侍エンジニア」エキスパートコースで学ぶ<br>
+                    HTML・CSS・laravel・wordpressを用いたサイト制作
+                </p>
+                <p>2022年<br>
+                    実際にサイトを運用しつつ<br>
+                    サイト制作に関する内容を中心にHTML・CSS・PHP等の言語について独学<br>
+                    職業訓練校で、Webマーケティングについて約500時間の訓練を受講
+                </p>
+            </div>
+        </section>
+        <section id="skill">
+            <h2>保有資格・スキル</h2>
+            <div class="content">
+                <h4>【保有資格】</h4>
+                <h5>VBAエキスパート Excel VBAスタンダード</h5>
+                <p>
+                Excelマクロに関する上級資格です。<br>
+                前職では、VBAマクロを使用したツール作成等も担当しており、<br>
+                自身で考えたツールを作成する技術を持っています
+                </p>
+                <h5>日商簿記検定試験　3級</h5>
+                <p>
+                経理の知識に関する資格です。<br>
+                会社全体のお金の流れを考えて仕事に従事することが出来ます
+                </p>
+                <h5>Googleアナリティクス個人認定資格</h5>
+                <p>
+                Googleアナリティクスの習熟度を認定する資格<br>
+                Googleアナリティクスを運用する一定の能力を持つことをGoogle公式から認められる内容です
+                </p>
+                <h5>実用英語技能検定試験　2級</h5>
+                <p>
+                Googleアナリティクスの習熟度を認定する資格<br>
+                Googleアナリティクスを運用する一定の能力を持つことをGoogle公式から認められる内容です
+                </p>
+                <h5>ITパスポート</h5>
+                <p>
+                職業人として備えておくべき情報技術に関する共通的な基礎知識を習得したことを国が証明する資格<br>
+                </p>
+            </div>
+        </section>
+        <section id="works">
+            <h2>制作物</h2>
+            <p>本サイト</p>
+        </section>
     </main>
     <footer>
-        <p class="copyright">&copy;　商品管理アプリ　All rights reserved.</p>
+
     </footer>
 </body>
 </html>
