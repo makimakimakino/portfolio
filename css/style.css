@@ -1,38 +1,71 @@
 /*-----------全体-----------*/
 body{
-    background-color: #555;
+	background:rgba(255,255,255,0.9);
     margin:0;
-    font-size:1rem;
+    font-size:16px;
     font-family: serif;
+	line-height:1rem;
+    min-width:1400px;
 }
 main{
-    background-color:#FFF;
-    max-width:960px;
-    margin:0 auto;
-    padding:10px;
+    padding-top:10px;
     color:#000;
+    width:100%;
+    margin:0px auto 0;
+}
+.mainContent{
+	width:960px;
+	margin:0 auto;
 }
 a{
     color:#000;
+	text-decoration:none;
+}
+p{
+	line-height:2rem;
 }
 img{
     display: block;
     max-width: 80%;
-    margin: 0 auto;
+	margin-bottom:20px;
+}
+section{
+	margin-bottom:20px;
 }
 /*-----------セクション共通-----------*/
 section h2{
+    text-align: center;
     font-size: 1.5rem;
-    padding:0 1rem;
+    padding:2rem 1rem;
     border-left:double 10px #444;
+    border-right:double 10px #444;
+    border-top:1px solid #BBB;
     border-bottom:1px solid #BBB;
+	background-color: #000;
+	background-clip: padding-box;
 }
 section h4{
+    text-align: left;
     font-size: 1.4rem;
+    animation: SlideIn 1.6s infinite;
+	margin-bottom: 20px;
+    text-decoration: underline;
 }
+/*
+@keyframes SlideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(64px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}*/
+
 section h5{
     font-size: 1.2rem;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     text-decoration: underline;
     text-decoration-thickness: 0.5em;
     text-decoration-color: rgba(100,255,100, 0.4);
@@ -40,36 +73,75 @@ section h5{
     text-decoration-skip-ink: none;
 }
 .content{
-    padding:10px 20px;
-    border:#EEE 1px solid;
+    padding:30px 0px 100px 0;
+    border-bottom:#000 1px solid;
 }
 .content p{
-    margin-bottom:35px;
+    margin-bottom:50px;
+}
+.flex{
+	display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.flexCenter{
+	display:flex;
+	justify-content: center;
 }
 
 /*-----------文字装飾-----------*/
 .strong{
-    font-size: 1.1rem;
-    border-bottom: 1px solid #444;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5em;
+    text-decoration-color: rgba(100,255,255, 0.4);
+    text-underline-offset: -0.2em;
+    text-decoration-skip-ink: none;
+}
+.fuchidori {
+  color: #FFF;
+  text-shadow:1px 1px 0 #999, -1px -1px 0 #999,
+              -1px 1px 0 #000, 1px -1px 0 #000,
+              0px 1px 0 #000,  0-1px 0 #000,
+              -1px 0 0 #000, 1px 0 0 #000;
 }
 
+.size40{
+	width:40%;
+}
+.bottom30{
+	margin-bottom:30px;
+}
 /*-----------ナビメニュー-----------*/
-header{
+nav{
 /*    display:flex;
     justify-content: space-between;*/
     justify-items: center;
     position: -webkit-sticky;
     position: sticky;
-    top: 10px;
+    top: 0px;
+}
+header{
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    background: url("../img/トップ画像.png");
+    background-position: center;
+    background-repeat: no-repeat
+}
+header footer{
+	width:100%;
+    min-width:960px;
 }
 nav{
     background-color: #000;
+	opacity: 0.8;
 }
 nav ul{
     justify-content: center;
     display:flex;
     margin:0;
-    line-height:5rem;
+    line-height:4rem;
 }
 nav ul li:hover{
     background-color:#444;
@@ -90,19 +162,160 @@ nav ul li a{
 /*    transform: skewX(-150deg);*/
 }
 
-/*-----------プロフィールボックス-----------*/
+@media (max-width:600px){
+    main{
+        width:100%;
+    }
+    nav{
+        background-color: #FFF;
+    }
+}
+/*-----------Top画像-----------*/
+.TopPic{
+    min-height:100vh;
+}
 
+/*-----------Aboutme-----------*/
+.aboutMeContent{
+	margin:40px 0 40px 0;
+}
+#profileBox{
+	width:50%;
+}
+#profileText{
+	width:50%;
+	padding:20px 0px;
+}
 .table-profile{
     border-collapse:collapse;
+    margin:0px auto;
+	width:100%;
+}
+#aboutMe .profilePic{
+	height:200px;
+	object-fit: cover;
+	width:100%;
+	margin:0;
+	max-width:100%;
 }
 .table-profile td,.table-profile th{
     border:solid 1px #BBB;
     padding:0.5rem;
+	display:table-cell;
+	vertical-align:middle;
+	background-color: #FFF;
 }
 .profile-title{
     font-size:1.2rem;
-    background-color: #000;
+    background-color: #ffa500;
+	height:250px;
 }
-.profile-summary{
+.table-profile .profile-summary{
     background-color: aquamarine;
+}
+#aboutMe{
+	text-align:left;
+}
+#aboutMe .flex{
+	align-content: center;
+	justify-content: center;
+}
+#aboutMe img{
+    margin:0 auto;
+	width:100%;
+	max-width: 95%;
+	object-fit: cover;
+}
+.aboutMeImg{
+	width:50%;
+}
+.aboutMeImg img{
+	margin:0px;
+}
+.aboutMeText{
+	width:50%;
+	padding:20px 0;
+}
+/*-----------経歴-----------*/
+#experience{
+	text-align:center;
+}
+.part{
+    border:1px solid #AAA;
+    margin:10px;
+    padding:10px;
+}
+.experience-when{
+	font-size:1.2rem;
+	line-height: 2rem;
+    background-color: antiquewhite;
+}
+
+.gakusei{
+	background-image:url("../img/gakusei.jpg");
+	background-size:  cover;
+}
+.progress{
+	width:25%;
+}
+.experience-content{
+	width:70%;
+}
+/*-----------資格・スキル-----------*/
+.skillBox{
+    display: flex;
+    justify-content: space-between;
+}
+.skillText{
+    width:49%;
+}
+.skillBox img{
+    width:49%;
+}
+
+/*-----------制作物-----------*/
+.chachImg{
+    width:100％;
+    height:auto;
+    border: solid 1px #444;
+    margin:0 auto;
+}
+.production_title{
+    font-size: 1.4rem;
+    margin:10px 0;
+    padding-bottom:5px;
+    border-bottom:#AAA solid 2px;
+}
+.productionBox a:hover{
+    opacity: 0.5;
+}
+.productionBox{
+    width:30%;
+    margin:5px;
+}
+.content-group-title{
+    background-color: #555;
+    color: #FFF;
+    padding: 10px;
+    margin: 40px 0 0 0;
+}
+/*-----------フッター-----------*/
+footer{
+	text-align:center;
+	background-color:#000;
+	color:#DDD;
+	padding:20px;
+}
+
+
+.slot{
+	background-image: url("../img/スロット.jpg");
+	background-size:  cover;
+    background-repeat:  no-repeat;  /* 背景の繰り返し設定 */
+    background-position: center;    /* 背景の位置指定 */
+}
+.productionBox{
+	padding:10px;
+	background-color: #FFF;
+	border:1px solid #DDD;
 }
