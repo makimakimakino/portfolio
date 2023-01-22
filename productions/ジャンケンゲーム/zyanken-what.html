@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <script>
+        function R_Click(p_janken_r) {
+            let janken = ['グー','チョキ','パー',];//"janken"のリストを作成します。
+            let janken_r = Math.floor( Math.random() * 3);//Math.random() で乱数を作ります
+            
+            let windowText = janken[p_janken_r]; 
+            var res = confirm("あなたの出す手は" + windowText + "でよろしいですか？");
+            if(res == true){
+                let p_janken = ['グー','チョキ','パー'];//"プレイヤーのjanken"のリストを作成します。
+                //勝ち負けの判定機プログラムです
+                if (janken_r === p_janken_r) {
+                    Flag_Result = 1;
+                } else if(p_janken_r === 0 && janken_r === 1) {
+                    Flag_Result = 2;
+                }else if(p_janken_r === 1 && janken_r === 2) {
+                    Flag_Result = 2;
+                }else if(p_janken_r === 2 && janken_r === 0) {
+                    Flag_Result = 2;
+                }else {
+                    Flag_Result = 0;
+                }
+                location.href ="zyanken_result.html?choice=gue"
+            }else{
+
+            }
+                /*
+            // 〇秒待機して次ページへ遷移
+            function sleepByPromise(sec) {
+                return new Promise(resolve => setTimeout(resolve, sec*1000));
+            }
+            async function wait(sec) {
+                await sleepByPromise(sec);
+                location.href ="zyanken_result.html?choice=gue"
+            }
+            wait(3);
+    */
+        }
+        </script>
+    </head>
+    
+    <body>
+        <div class="meigen">「奇跡を待つより捨て身の努力よ！」</div>
+        <div class="meigen">「あなたの判断で行動すればいい。未来における自分の責任は現在の自分が負うべき。それがあなたの未来」</div>
+        <div class="choicevoice">運命を切り拓け！</div>
+        <div class="choices">
+            <div class="choice">
+                <a onclick="R_Click(0);" href="#"><img src="janken_gu.png"></a>
+            </div>
+            <div class="choice">
+                <a onclick="R_Click(1);" href="#"><img src="janken_choki.png"></a>
+            </div>
+            <div class="choice">
+                <a onclick="R_Click(2);" href="#"><img src="janken_pa.png"></a>
+            </div>
+            </div>
+
+    </body>
+
+    <style>
+        .choices{
+            display: flex;
+        }
+        .choice a:hover{
+            opacity: 0.5;
+        }
+        .choice img{
+            height: 300px;
+        }
+    </style>
+</html>

@@ -5,117 +5,241 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>槙野圭一</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
-    <header>
+    <header id="header">
+    </header>
+    <main>
         <nav>
             <ul>
                 <li><a href="#aboutMe">About me</a></li>
-                <li><a href="#experience">職歴・経験</a></li>
-                <li><a href="#skill">スキル</a></li>
+                <li><a href="#experience">経歴</a></li>
                 <li><a href="#works">制作物</a></li>
+                <li><a href="#skill">スキル・資格</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
-        <section id="aboutMe">
-            <h2>About me</h2>
-            <div class="content">
-                <table class="table-profile">
-                    <tr>
-                        <th class="profile-title" colspan="2">プロフィール</td>
-                    </tr>
-                    <tr>
-                        <td class="profile-summary">『名前』</td>
-                        <td class="profile-content">槙野圭一</td>
-                    </tr>
-                    <tr>
-                        <td class="profile-summary">『出身』</td>
-                        <td class="profile-content">兵庫県</td>
-                    </tr>
-                    <tr>
-                        <td class="profile-summary">『生年月日』</td>
-                        <td class="profile-content">1990年3月18日</td>
-                    </tr>
-                    <tr>
-                        <td class="profile-summary">『最終学歴』</td>
-                        <td class="profile-content">関西学院大学　理工学部情報科学科卒<br>関西学院大学院　修士課程修了</td>
-                    </tr>
-                </table>
-                <p>大学院卒業後、パチスロメーカーでパチスロ開発の企画職を8年間行ってきました<br></p>
-                <img src="img/kikaku.png" alt="パチスロ企画職イメージ">
-                <p>企画職として、億単位で動く大きなプロジェクトを進めていく経験をしており、<br>
-                    <span class="strong">コミュニケーション能力</span><br>
-                    <span class="strong">企画立案能力</span><br>
-                    <span class="strong">自身で考えて動く力</span><br>
-                    ・・・<br>
-                    を持っていることが強みです</p>
-                <p>また、大学・大学院ではIT、プログラムに関する基礎知識を学習しており、<br>仕事の場では身近な時間短縮ツールの<span class="strong">プログラム作成</span>等も担当してきました</p>
-            </div>
-        </section>
+		<div class='mainContent'>
+			<section id="aboutMe">
+				<h2 class="fuchidori">About me</h2>
+				<div class="content">
+					<div id='profile' class="flex aboutMeContent">
+						<div id="profileText">
+							<h4>プロフィール</h4>
+							<p>
+								サイトをご覧いただきありがとうございます。<br>
+								一流のWebエンジニアを目指して日々精進しています<br>槙野圭一です<br>
+							</p>
+							<p>
+								大学では、理工学部の情報科学科でIT・情報について学び、大学院の修士課程まで学習していました<br>
+								卒業後は、大好きだった遊技機のメーカーに開発職として就職<br>
+								遊技機開発の企画職として約8年間働いて来ました
+							</p>
+						</div>
 
-        <section id="experience">
-            <h2>職歴・経験</h2>
-            <div class="content">
-                <p>2012年3月<br>
-                関西学院大学理工学部情報科学科　卒業</p>
-                <p>2014年3月<br>
-                    関西学院大学大学院 理工学研究科 人間システム工学専攻　修士課程修了</p>
-                <p>2014年4月<br>
-                    タイヨーエレック株式会社入社</p>
-                <p>2017年4月<br>
-                    親会社のサミー株式会社へ移籍</p>
-                <p>2021年12月<br>
-                    サミー株式会社を退職<br><br>
-                    プログラミングスクール「侍エンジニア」エキスパートコースで学ぶ<br>
-                    HTML・CSS・laravel・wordpressを用いたサイト制作
-                </p>
-                <p>2022年<br>
-                    実際にサイトを運用しつつ<br>
-                    サイト制作に関する内容を中心にHTML・CSS・PHP等の言語について独学<br>
-                    職業訓練校で、Webマーケティングについて約500時間の訓練を受講
-                </p>
-            </div>
-        </section>
-        <section id="skill">
-            <h2>保有資格・スキル</h2>
-            <div class="content">
-                <h4>【保有資格】</h4>
-                <h5>VBAエキスパート Excel VBAスタンダード</h5>
-                <p>
-                Excelマクロに関する上級資格です。<br>
-                前職では、VBAマクロを使用したツール作成等も担当しており、<br>
-                自身で考えたツールを作成する技術を持っています
-                </p>
-                <h5>日商簿記検定試験　3級</h5>
-                <p>
-                経理の知識に関する資格です。<br>
-                会社全体のお金の流れを考えて仕事に従事することが出来ます
-                </p>
-                <h5>Googleアナリティクス個人認定資格</h5>
-                <p>
-                Googleアナリティクスの習熟度を認定する資格<br>
-                Googleアナリティクスを運用する一定の能力を持つことをGoogle公式から認められる内容です
-                </p>
-                <h5>実用英語技能検定試験　2級</h5>
-                <p>
-                Googleアナリティクスの習熟度を認定する資格<br>
-                Googleアナリティクスを運用する一定の能力を持つことをGoogle公式から認められる内容です
-                </p>
-                <h5>ITパスポート</h5>
-                <p>
-                職業人として備えておくべき情報技術に関する共通的な基礎知識を習得したことを国が証明する資格<br>
-                </p>
-            </div>
-        </section>
-        <section id="works">
-            <h2>制作物</h2>
-            <p>本サイト</p>
-        </section>
+						<div id="profileBox">
+							<table class="table-profile">
+								<img class='profilePic' src="img/me.png">
+								<tr>
+									<td class="profile-summary">『名前』</td>
+									<td class="profile-content">槙野圭一</td>
+								</tr>
+								<tr>
+									<td class="profile-summary">『出身』</td>
+									<td class="profile-content">兵庫県</td>
+								</tr>
+								<tr>
+									<td class="profile-summary">『生年月日』</td>
+									<td class="profile-content">1990年3月18日</td>
+								</tr>
+								<tr>
+									<td class="profile-summary">『最終学歴』</td>
+									<td class="profile-content">関西学院大学　理工学部情報科学科卒<br>関西学院大学院　修士課程修了</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div id='whatkikaku' class="flex aboutMeContent">
+						<div id='kikakuImg' class="aboutMeImg">
+							<img src="img/企画仕事2.png" alt="パチスロ企画職イメージ">
+						</div>
+						<div id='whatkikakuText' class="aboutMeText">
+							<h4>「遊技機開発の企画職？」</h4>
+							<p>
+								簡単に言うと、<br>
+								『パチスロ開発プロジェクト全体のまとめ役』<br>
+								です<br>
+								プロジェクトの中心メンバーとして企画～開発、販売するまでの流れ全般に関わってきました
+							</p>
+						</div>
+					</div>
+					<div id='strongPoint' class='flex aboutMeContent'>
+						<div id='strongPointText' class="aboutMeText">
+							<h4>「自身の強み」</h4>
+							<p>企画職として、億単位で動く大きなプロジェクトを経験することから得た<br>
+								<span class="strong">コミュニケーション能力</span><br>
+								<span class="strong">企画立案能力</span><br>
+								<span class="strong">自身で考えて動く力</span><br>
+								・・・etc<br>
+								が強みです</p>
+						</div>
+						<div id='strongPointImg' class="aboutMeImg">
+							<img src="img/企画仕事.png" alt="パチスロ企画職イメージ">
+						</div>
+					</div>
+					<div id='strongPoint2' class='flex aboutMeContent'>
+						<div id='strongPointImg' class="aboutMeImg">
+							<img src="img/gakusei.jpg" alt="パチスロ企画職イメージ">
+						</div>
+						<div id='strongPointText' class="aboutMeText">
+							<h4>「IT知識の活用」</h4>
+							<p>学生時代に学んだIT、プログラムについての知識を活用し、<br>
+								仕事の場では身近な時間短縮ツールの<span class="strong">プログラム作成</span>や<span class="strong">機械学習を用いた分析業務</span>等も担当してきました</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="experience">
+				<h2><span class="fuchidori">経歴</span></h2>
+				<div class="content">
+					<div class="part">
+						<div class="experience-when">2012年3月</div><br>
+						関西学院大学理工学部情報科学科　卒業
+						<div class="experience-when">2014年3月</div><br>
+						関西学院大学大学院 理工学研究科 人間システム工学専攻　修士課程修了
+					</div>
+					<div class="part">
+						<div class="experience-when">2014年4月</div><br>
+						タイヨーエレック株式会社入社
+						<div class="experience-when">2017年4月</div><br>
+						親会社のサミー株式会社へ移籍
+					</div>
+					<div class="part">
+						<div class="experience-when">2021年12月</div><br>
+						サミー株式会社を退職<br><br>
+						プログラミングスクール「侍エンジニア」エキスパートコースで学ぶ<br>
+						HTML・CSS・laravel・wordpressを用いたサイト制作
+					</div>
+					<div class="part">
+						<div class="experience-when">2022年</div><br>
+						実際にサイトを運用しつつ<br>
+						サイト制作に関する内容を中心にHTML・CSS・PHP等の言語について独学<br>
+						職業訓練校で、Webマーケティングについて約500時間の訓練を受講
+					</div>
+				</div>
+			</section>
+
+			<section id="works">
+				<h2 class="fuchidori">制作物</h2>
+				<h3 class="content-group-title">Webマーケティング・サイト制作関連</h3>
+				<div class="content flex">
+					<div class="productionBox">
+						<a href="#">
+							<h3 class="production_title">本サイト</h3>
+							<img class="chachImg" src="productions/catchImg/ポートフォリオサイト.png">
+						</a>
+					</div>
+					<div class="productionBox">
+						<a href="productions/サイト制作企画書.pdf">
+							<h3 class="production_title">サイト制作企画書</h3>
+							<img class="chachImg" src="productions/catchImg/サイト制作企画書.png">
+						</a>
+					</div>
+					<div class="productionBox">
+						<a href="productions/飲食店サイト改善提案.pdf">
+							<h3 class="production_title">サイト改善提案資料</h3>
+							<img class="chachImg" src="productions/catchImg/サイト改善提案資料.png">
+						</a>
+					</div>
+					<div class="productionBox">
+						<a href="productions/マーケティングレポート.pdf">
+							<h3 class="production_title">マーケティングレポート</h3>
+							<img class="chachImg" src="productions/catchImg/マーケティングレポート.png">
+						</a>
+					</div>
+				</div>
+
+				<h3 class="content-group-title">企画・プログラム関連</h3>
+				<div class="content flex">
+					<div class="productionBox">
+						<a href="productions/スロット風ジャンケンゲーム企画.pdf">
+							<h3 class="production_title">じゃんけんゲーム仕様書</h3>
+							<img class="chachImg" src="productions/catchImg/じゃんけんげーむ仕様書.png">
+						</a>
+					</div>
+					<div class="productionBox">
+						<a href="productions/ジャンケンゲーム/zyanken-TOP.html">
+							<h3 class="production_title">じゃんけんゲーム</h3>
+							<img class="chachImg" src="productions/catchImg/じゃんけんげーむ仕様書.png">
+						</a>
+					</div>
+				</div>
+
+			</section>
+
+
+			<section id="skill">
+				<h2 class="fuchidori">保有資格・スキル</h2>
+				<div class="content">
+					<div class="skillBox">
+						<div class="skillText">
+							<h5>VBAエキスパート Excel VBAスタンダード</h5>
+							<p>
+							Excelマクロに関する上級資格<br>
+							前職では、VBAマクロを使用したツール作成等も担当<br>
+							自身で考えたツールを作成する技術を持っています
+							</p>
+						</div>
+						<img src="img/program.jpg">
+					</div>
+					<div class="skillBox">
+						<img src="img/boki.jpg">
+						<div class="skillText">
+							<h5>日商簿記検定試験　3級</h5>
+							<p>
+							経理の知識に関する資格です。<br>
+							会社全体のお金の流れを考えて仕事に従事することが出来ます
+							</p>
+						</div>
+					</div>
+					<div class="skillBox">
+						<div class="skillText">
+							<h5>Googleアナリティクス個人認定資格</h5>
+							<p>
+							Googleアナリティクスの習熟度を認定する資格<br>
+							Googleアナリティクスを運用する一定の能力を持つことをGoogle公式から認められる内容です
+							</p>
+						</div>
+						<img src="img/marke.jpg">
+					</div>
+					<div class="skillBox">
+						<img src="img/English.jpg">
+						<div class="skillText">
+							<h5>実用英語技能検定試験　2級</h5>
+							<p>
+							「社会生活に必要な英語を理解し、また使用することができる」レベルを認められる資格<br>
+							</p>
+						</div>
+					</div>
+					<div class="skillBox">
+						<div class="skillText">
+							<h5>ITパスポート</h5>
+							<p>
+							職業人として備えておくべき情報技術に関する共通的な基礎知識を習得したことを国が証明する資格<br>
+							</p>
+						</div>
+						<img src="img/IT.jpg">
+					</div>
+				</div>
+			</section>
+		</div>
     </main>
     <footer>
-
+		©2022　槙野圭一
     </footer>
+
 </body>
 </html>

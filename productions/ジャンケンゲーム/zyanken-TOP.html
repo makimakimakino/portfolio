@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけんの拳-Top</title>
+    <script>
+        window.addEventListener('DOMContentLoaded', function(){
+
+            const audioElement = document.querySelector("audio");
+            audioElement.addEventListener('loadeddata', (e)=> {
+            audioElement.muted = true;
+            audioElement.autoplay = true;
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2 id="GameTitle">じゃんけんの拳</h2>
+    <div id="dounyu">200X年<br>世界は<br>じゃんけんに満ち溢れていた！</div>
+
+    <a  class="StartBtn" href="./zyanken-what.html">ゲームを開始する</a>
+</body>
+<style>
+    body{
+        background-color: #000;
+        color:#FFF;
+    }
+    #GameTitle{
+        text-align: center;
+        font-size:3rem;
+    }
+    #dounyu{
+        text-align: center;
+        padding: 0 50px;
+        line-height:5rem;
+        font-size:1.5rem;
+    }
+    .StartBtn{
+        margin:20px auto;
+        display:block;
+        width:300px;
+        height:1.5rem;
+        text-align: center;
+        padding: 10px;
+        border:#222;
+        background-color: #eb6100;
+        border-radius:100vh;
+        color:#FFF;
+    }
+</style>
+</html>
