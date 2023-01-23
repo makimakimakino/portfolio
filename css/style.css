@@ -124,10 +124,7 @@ nav{
 header{
     position: relative;
     width: 100%;
-    min-height: calc(100vh - 70px);
-    background: url("../img/トップ画像.png");
-    background-position: center;
-    background-repeat: no-repeat
+    background-color: #000;
 }
 header footer{
 	width:100%;
@@ -172,7 +169,8 @@ nav ul li a{
 }
 /*-----------Top画像-----------*/
 .TopPic{
-    min-height:100vh;
+    min-height: calc(100vh - 70px);
+    margin: 0 auto;
 }
 
 /*-----------Aboutme-----------*/
